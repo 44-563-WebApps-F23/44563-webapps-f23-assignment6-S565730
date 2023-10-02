@@ -27,7 +27,7 @@ function tips(){
         toShow += `${tippercent + (4 * i)}% is ${calculatedTip.toFixed(2)};` ;
 
     }
-    document.getElementById("tipResults").innerHTML ="Tips are:"+toShow;
+    document.getElementById("results").innerHTML ="Tips are:"+toShow;
 
 }
 </script>
@@ -42,7 +42,7 @@ function tips(){
     <label>
         <input type="radio" name="operation" value="product" onclick="choseOp()">mult
     </label><br>
-    <div id="operationResult"></div>
+    <div id="result"></div>
     <script>
         function chooseOp(){
             const baseamount=document.getElementById("baseamount").valueAsNumber;
@@ -65,7 +65,7 @@ function tips(){
             else if(selectedOperation==="product"){
                 resultText=`product of ${baseamount} and ${tippercent} is ${baseamount*tippercent}`;  
             }
-            document.getElementById("operationResult").innerHTML="Operation Result are:"+resultText;
+            document.getElementById("result").innerHTML="Operation Result are:"+resultText;
         }
     </script>
 </from>
